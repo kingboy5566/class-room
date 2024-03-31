@@ -18,11 +18,19 @@ header{
 
 
 .header i{
-   
     margin: 10px;
     margin-top: 8px;
     margin-left: 8px;
     font-size: 20px;
+}
+#plus{
+    width: 35px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 50px;}
+#plus:hover{
+    background-color: rgba(153, 153, 153, 0.308);
+    
 }
 .menu-icone{
     width: 35px;
@@ -30,15 +38,17 @@ header{
     margin-right: -50px;
     margin-top: 15px;
     border-radius: 50px;
-    
-    /* background-color: rgba(153, 153, 153, 0.308);
-     */
+   
+     
+}
+.menu-icone:hover{
+     background-color: rgba(153, 153, 153, 0.308);
+     
 }
 .side-B{
     width: 50%;
     height: 60px;
-    margin-left: 80%;
-    
+    margin-left: 80%;    
 }
 .side-B i{
     margin: 5px;
@@ -47,7 +57,7 @@ header{
     font-size: 20px;
 }
 
-ul{
+.side-B ul{
     display: flex;
 }
 ul li{
@@ -67,8 +77,8 @@ ul li{
 }
 
  .class-input{
-    width: 80%;
-    margin-left:10%;
+    width: 50%;
+    margin-left:20%;
     margin-right: 10%;
     height: 250px;
     margin-top: 15px;
@@ -116,14 +126,53 @@ ul li{
 .btn1:hover ,.btn2:hover{
     color: gray;
 }
+#side-bar{
+    width:250px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0px;
+    margin-top: 60px;
+    border: 1px solid red;
+}
+.side-contect1,.side-contect3{
+ 
+height: 10%;
+border: 1px solid  rgb(197, 193, 193);
+}
+.side-contect2{
+    height: 20%;
+    border: 1px solid rgb(197, 193, 193);
+}
+.side-contect1 ul,.side-contect2 ul,.side-contect3 ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;   margin-left: 20px;    
+}
+.side-contect1 ul li a,.side-contect2 ul li a,.side-contect3 ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    color: black;
+  
+    
+
+    
+}
+
+
+
+
+#card{
+    width: 100%;
+}
 .card{
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 30px;
+    width: 25%;
+    margin: 5px;
     height: 300px;
     border-radius: 4px;
-    border: 1px solid rgba(129, 127, 127, 0.548);
+    border: 1px solid green;
+    /* border: 1px solid rgba(129, 127, 127, 0.548); */
 }
 
 .title{
