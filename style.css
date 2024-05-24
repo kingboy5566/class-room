@@ -32,7 +32,7 @@ header{
     background-color: rgba(153, 153, 153, 0.308);
     
 }
-.menu-icone{
+/* .menu-icone{
     width: 35px;
     height: 35px;
     margin-right: -50px;
@@ -40,7 +40,7 @@ header{
     border-radius: 50px;
    
      
-}
+} */
 .menu-icone:hover{
      background-color: rgba(153, 153, 153, 0.308);
      
@@ -126,6 +126,18 @@ ul li{
 .btn1:hover ,.btn2:hover{
     color: gray;
 }
+#sidebaricone{
+    position: absolute;
+    z-index: 10;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+
+}
+#side-bar:checked ~ #side-bar{
+    transform: translateX(0px);
+}
+
 #side-bar{
     width:250px;
     height: 100%;
@@ -133,6 +145,8 @@ ul li{
     left: 0;
     top: 0px;
     margin-top: 60px;
+    transform: translateX(-250px);
+    transition: transform 5s;
     border: 1px solid red;
 }
 .side-contect1,.side-contect3{
@@ -142,6 +156,7 @@ border: 1px solid  rgb(197, 193, 193);
 }
 .side-contect2{
     height: 20%;
+    padding-top:5%;
     border: 1px solid rgb(197, 193, 193);
 }
 .side-contect1 ul,.side-contect2 ul,.side-contect3 ul{

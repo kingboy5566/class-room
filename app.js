@@ -9,12 +9,12 @@ var pls = document.querySelectorAll("#plus")
 // var main = document.getElementById("main")
 function showmain(e){
   var main = document.getElementById("main")
-  
-  
- main.setAttribute('class','class-input')
+  var li = document.createElement("li")
+  main.appendChild(li)
+ li.setAttribute('class','class-input')
  
 
-main .innerHTML =`<h3 class="text">Create class</h3>
+li.innerHTML =`<h3 class="text">Create class</h3>
  <div class="input1"> <input type="text" class="inp1" id='class' placeholder="class name "></div>
  <div class="input2"> <input type="text" class="inp1" id='selection' placeholder="selection"></div>
   
